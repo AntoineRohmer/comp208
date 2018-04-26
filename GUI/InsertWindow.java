@@ -1,10 +1,14 @@
 import java.awt.*;
+import java.awt.event.*;
 import javax.swing.*;
 
-public class QueryWindow extends JFrame {
-	public QueryWindow() {
-		this.setTitle("Custom query");
+public class InsertWindow extends JFrame{
+	public InsertWindow(String table_name) {
+		this.setTitle("Insert");
 		Container container = getContentPane();
+		container.setLayout(new GridBagLayout());
+		
+		
 		container.setBackground(Color.white);
 		setVisible(true);
 		setSize(360, 280);
